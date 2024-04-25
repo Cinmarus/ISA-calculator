@@ -57,12 +57,6 @@ def get_user_input():
             if mode in altitude_factors:
                 altitude = get_alttitude(mode)
                 return altitude
-            elif mode == "4":
-                pressure_altitude = get_pressure_altitude()
-                return pressure_altitude
-            elif mode == "5":
-                density_altitude = get_density_altitude()
-                return density_altitude
             else:
                 print("wal się na łep")
         except ValueError:
