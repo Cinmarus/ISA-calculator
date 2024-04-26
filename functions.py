@@ -43,10 +43,10 @@ def get_alttitude(mode):
             try:
                 altitude = float(altitude_input)
                 altitude_meters = altitude * altitude_factors[mode]
-                if altitude > 0:
+                if 86000 >= altitude_meters > 0:
                     return altitude_meters
                 else:
-                    print("Please enter a altitude grater then 0.")
+                    print("Please enter a altitude grater then 0 or in atmosphere range.")
             except ValueError:
                 print("Invalid input. Please enter a valid floating-point number.")
 def get_user_input():
